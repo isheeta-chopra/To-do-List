@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+    </style>
+</head>
+<body>
+    <!-- Nav-Bar -->
+    <div id = "navBar">
+        <h1>
+            Tasks
+            <span class = "blue"> <!-- span is inline -->
+                List
+            </span>
+        </h1>
+    </div>
+    <!-- Rest of the page -->
+    <div id = "container">
+
+        <!-- Add new Task -->
+        <div>
+            <span id = "rightContainer">
+                <span class = "btnCircle" id = "addTask">
+                    +
+                </span>
+                <span >
+                    Add New Task
+                </span>
+            </span>
+        </div>
+
+        <!-- Default Card when page is empty-->
+        <div id = "placeholder">
+            <!-- It also contains all the task cards when created -->
+            <p id = "noTasks">
+                No Tasks Yet
+            </p>
+        </div>
+    </div>
+
+    <!-- Task Card -->
+    <div id = "taskInputContainer" class = "inputContainer">
+        <div id = "taskinput" class = "input">
+            <!-- Heading -->
+            <p id = "taskInputHeading" class = "inputHeading">
+                Add New task
+                <span id="closeTaskInput" class="closeInput">
+                    <!-- <i class="fa-solid fa-xmark"></i> -->
+                    x
+                </span>
+            </p>
+            <!-- Content -->
+            <div id="taskInputContent" class="inputContent">
+                <input type="text" placeholder="Learn C++" id="task"><br>
+                <button class="btn" id="addTaskBtn">+ Add Task</button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Item Card -->
+    <div id="itemInputContainer" class="inputContainer">
+        <div id="itemInput" class="input">
+            <!-- Heading -->
+            <p id="itemInputHeading" class="inputHeading">Add New Item
+                <span id="closeItemInput" class="closeInput">
+                    <!-- <i class="fa-solid fa-xmark"></i> -->
+                    x
+                </span>
+            </p>
+            <!-- Content -->
+            <div id="itemInputContent" class="inputContent">
+                <input type="text" placeholder="Visit Famous Places" id="item"><br>
+                <div id="addItemrightContainer">
+                    <button class="btn" id="addItemBtn">+ Add Item</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Item Card Background
+    <div id = "itemContainer">
+        <span id = "itemLeftContainer">
+            <span>
+                <img src="/Resources/Arrow.webp" height="15px" width="17px">
+            </span>
+            <span>
+                Back
+            </span>
+        </span>
+        
+
+        <span id = "itemRightContainer">
+            <span class = "btnCircle" id = "addItem">
+                +
+            </span>
+            <span>
+                Add New Task
+            </span>
+        </span>
+    </div> -->
+
+    <!-- Functionality -->
+    <script src="script.js"></script>
+
+
+</body>
+</html>
